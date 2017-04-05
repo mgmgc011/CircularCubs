@@ -12,6 +12,8 @@
 		7B02FCF01E954FC500D13F06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B02FCEE1E954FC500D13F06 /* Main.storyboard */; };
 		7B02FCF21E954FC500D13F06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B02FCF11E954FC500D13F06 /* Assets.xcassets */; };
 		7B02FCF51E954FC500D13F06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B02FCF31E954FC500D13F06 /* LaunchScreen.storyboard */; };
+		7B02FCFF1E9553FD00D13F06 /* CubsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B02FCFE1E9553FD00D13F06 /* CubsViewController.swift */; };
+		7B02FD011E9555C300D13F06 /* CircularMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B02FD001E9555C300D13F06 /* CircularMotion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		7B02FCF11E954FC500D13F06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B02FCF41E954FC500D13F06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B02FCF61E954FC500D13F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B02FCFE1E9553FD00D13F06 /* CubsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubsViewController.swift; sourceTree = "<group>"; };
+		7B02FD001E9555C300D13F06 /* CircularMotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularMotion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				7B02FCEA1E954FC500D13F06 /* AppDelegate.swift */,
 				7B02FCEC1E954FC500D13F06 /* ViewController.swift */,
+				7B02FD001E9555C300D13F06 /* CircularMotion.swift */,
+				7B02FCFE1E9553FD00D13F06 /* CubsViewController.swift */,
 				7B02FCEE1E954FC500D13F06 /* Main.storyboard */,
 				7B02FCF11E954FC500D13F06 /* Assets.xcassets */,
 				7B02FCF31E954FC500D13F06 /* LaunchScreen.storyboard */,
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B02FCED1E954FC500D13F06 /* ViewController.swift in Sources */,
+				7B02FCFF1E9553FD00D13F06 /* CubsViewController.swift in Sources */,
+				7B02FD011E9555C300D13F06 /* CircularMotion.swift in Sources */,
 				7B02FCEB1E954FC500D13F06 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

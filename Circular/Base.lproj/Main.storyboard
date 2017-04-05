@@ -21,22 +21,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yWh-1x-jE0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cubs" translatesAutoresizingMaskIntoConstraints="NO" id="yWh-1x-jE0">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKc-Tk-Mfk">
+                                <rect key="frame" x="147" y="567" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.0025213888346576957" green="0.092157187131810633" blue="0.55100019208065754" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="Chicago">
+                                    <color key="titleColor" red="0.84883123636245728" green="0.036139219999313354" blue="0.190752774477005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6dx-iU-nbS" kind="show" id="3Ps-v9-MKj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="chicagoButton" destination="cKc-Tk-Mfk" id="DDE-re-OoH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="232.80000000000001" y="161.46926536731635"/>
+            <point key="canvasLocation" x="246" y="161"/>
         </scene>
-        <!--View Controller-->
+        <!--Cubs View Controller-->
         <scene sceneID="hv8-ep-Fwg">
             <objects>
-                <viewController id="6dx-iU-nbS" customClass="ViewController" customModule="Circular" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6dx-iU-nbS" customClass="CubsViewController" customModule="Circular" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kK5-yh-CvR"/>
                         <viewControllerLayoutGuide type="bottom" id="50m-2P-4E8"/>
@@ -44,12 +59,32 @@
                     <view key="view" contentMode="scaleToFill" id="ZdU-6Y-cFP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ihx-rm-CBM">
+                                <rect key="frame" x="147" y="567" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="Cubs">
+                                    <color key="titleColor" red="0.84883123640000002" green="0.03613922" blue="0.1907527745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cubsButtonAction:" destination="6dx-iU-nbS" eventType="touchUpInside" id="Qa6-Cc-jdS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.001635971013456583" green="0.09462592750787735" blue="0.55481070280075073" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="cubsButton" destination="Ihx-rm-CBM" id="hQ8-jR-hAZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uDQ-IS-pyf" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="961" y="161"/>
+            <point key="canvasLocation" x="960.79999999999995" y="160.56971514242881"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Cubs" width="640" height="640"/>
+    </resources>
 </document>
